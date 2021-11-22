@@ -36,7 +36,7 @@ namespace NeuralNetwork
             }
         }
 
-        public Matrix(int row, int col, double min = Double.MinValue, double max = Double.MaxValue)
+        public Matrix(int row, int col, double min = Double.MinValue, double max = Double.MaxValue) // create matrix and set values between min and max
         {
             this._row = row;
             this._col = col;
@@ -168,7 +168,7 @@ namespace NeuralNetwork
             return res;
         }
 
-        public static Matrix HadamardProduct(Matrix A, Matrix B)
+        public static Matrix HadamardProduct(Matrix A, Matrix B) // element-wise vector multiplication
         {
             Matrix res = new Matrix(A._row, A._col);
 
@@ -213,7 +213,7 @@ namespace NeuralNetwork
             return res;
         }
         
-        public static Matrix FromArray(double[] inputArr, int row, int col)
+        public static Matrix FromArray(double[] inputArr, int row, int col) // turn array into matrix given row an col info
         {
             Matrix M = new Matrix(row, col);
             

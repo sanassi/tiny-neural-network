@@ -9,7 +9,7 @@ namespace NeuralNetwork
             // test nn on xor problem : appears to be working
             
             int nbInput = 2;
-            //int nbHidden = 50;
+            int nbHidden = 50;
             int nbOutput = 1;
             
 
